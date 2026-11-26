@@ -1,0 +1,12 @@
+# .gitignore
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tmp/
+Dataset/
+models/.cache/
+models/resnet18_imagenet.pth
+venv/
+.venv/
+.streamlit/secrets.toml

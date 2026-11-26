@@ -1,0 +1,147 @@
+{
+  "model": {
+    "architecture": "ResNet-18 (Transfer Learning)",
+    "input_size": "224x224",
+    "train_samples": 860,
+    "val_samples": 215,
+    "overall_accuracy": 94.88,
+    "correct": 204,
+    "total_val": 215,
+    "macro_avg": {
+      "precision": 0.8859,
+      "recall": 0.89,
+      "f1_score": 0.8877
+    },
+    "weighted_avg": {
+      "precision": 0.9487,
+      "recall": 0.9488,
+      "f1_score": 0.9485
+    },
+    "per_class": [
+      {
+        "class_name": "deburring",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 9
+      },
+      {
+        "class_name": "inclusion",
+        "precision": 0.925,
+        "recall": 0.881,
+        "f1_score": 0.9024,
+        "support": 42
+      },
+      {
+        "class_name": "rolled_pit",
+        "precision": 0.6,
+        "recall": 0.6,
+        "f1_score": 0.6,
+        "support": 5
+      },
+      {
+        "class_name": "silk_spot",
+        "precision": 0.9692,
+        "recall": 0.9692,
+        "f1_score": 0.9692,
+        "support": 130
+      },
+      {
+        "class_name": "waist folding",
+        "precision": 0.9355,
+        "recall": 1.0,
+        "f1_score": 0.9667,
+        "support": 29
+      }
+    ],
+    "confusion_matrix": [
+      [
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        37,
+        1,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        2
+      ],
+      [
+        0,
+        3,
+        1,
+        126,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        29
+      ]
+    ],
+    "class_names": [
+      "deburring",
+      "inclusion",
+      "rolled_pit",
+      "silk_spot",
+      "waist folding"
+    ]
+  },
+  "eda": {
+    "total_images": 1075,
+    "num_classes": 5,
+    "class_distribution": [
+      {
+        "class_name": "deburring",
+        "count": 43,
+        "percentage": 4.0
+      },
+      {
+        "class_name": "inclusion",
+        "count": 211,
+        "percentage": 19.63
+      },
+      {
+        "class_name": "rolled_pit",
+        "count": 28,
+        "percentage": 2.6
+      },
+      {
+        "class_name": "silk_spot",
+        "count": 649,
+        "percentage": 60.37
+      },
+      {
+        "class_name": "waist folding",
+        "count": 144,
+        "percentage": 13.4
+      }
+    ],
+    "file_formats": {
+      ".png": 12,
+      ".jpg": 1063
+    },
+    "image_dimensions": {
+      "width_min": 153,
+      "width_max": 2817,
+      "width_mean": 1989.2,
+      "height_min": 116,
+      "height_max": 1400,
+      "height_mean": 976.3,
+      "aspect_ratio_mean": 2.03,
+      "avg_file_size_kb": 403.7
+    }
+  }
+}
